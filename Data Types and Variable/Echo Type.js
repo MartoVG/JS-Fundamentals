@@ -1,6 +1,12 @@
-function solve(first, charac, second) {
-    let result = first.replace('_', charac);
-    let output = result === second? "Matched": "Not Matched"; 
-    console.log(output);
+function solve(parameter) {
+    let typeOfParameter = typeof parameter;
+    console.log(typeOfParameter);
+    if (typeOfParameter == 'string' || typeOfParameter == 'number') {
+        console.log(parameter);
+    }else{
+        
+        console.log('Parameter is not suitable for printing');
+    }
+
 }
-solve('Str_ng', 'I', 'StrIng');
+solve(null);
